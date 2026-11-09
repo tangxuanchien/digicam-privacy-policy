@@ -72,8 +72,9 @@
       <strong>In short:</strong> your photos and videos are taken, processed and saved
       <strong>on your device only</strong>. We do not run servers, we do not collect personal data, and nothing
       you shoot leaves your phone unless you choose to share it yourself. The App shows ads from
-      <strong>Google AdMob</strong> (unless you have Premium) and connects to <strong>Google Play</strong> for the
-      optional Premium subscription; those are its only network connections.
+      <strong>Google AdMob</strong> (unless you have Premium), connects to <strong>Google Play</strong> for the
+      optional Premium subscription, and uses <strong>Google Firebase</strong> for crash reports, anonymous usage
+      statistics and remote settings; those are its only network connections.
     </div>
 
     <h2>1. Information the App processes</h2>
@@ -133,24 +134,44 @@
       </ul>
     </div>
 
-    <h2>4. What we do NOT do</h2>
+    <h2>4. Crash reports, usage statistics and settings (Google Firebase)</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Firebase Crashlytics.</strong> If the App crashes or freezes, it sends a crash report: the stack
+        trace, device model, Android version, app version and a Firebase installation ID. We use it only to find
+        and fix bugs. Crash reports are kept for 90 days.</li>
+        <li><strong>Google Analytics for Firebase.</strong> The App sends usage events such as which screens are
+        opened, which camera is picked, and that a photo was taken or a video recorded (with the camera name and
+        video length). It never sends your photos, videos, recordings or file names. Firebase adds an app instance
+        ID, device and Android information and an approximate location derived from your IP address. We use these
+        statistics to understand which features people use. Event data is kept for up to 14 months.</li>
+        <li><strong>Firebase Remote Config.</strong> The App downloads settings from Firebase, such as whether ads
+        are on and which ad units to use. This uses a Firebase installation ID.</li>
+        <li>Learn more: <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacy and security in
+        Firebase</a>.</li>
+      </ul>
+    </div>
+
+    <h2>5. What we do NOT do</h2>
     <ul>
       <li>We do not require an account or ask for your name, email or phone number.</li>
       <li>We do not upload, store or view your photos, videos or recordings on any server.</li>
-      <li>We do not collect your contacts or browsing history, and we do not receive any personal data ourselves
-      (see section 3 for what Google AdMob collects).</li>
-      <li>We do not use analytics or tracking SDKs; the only advertising SDK is Google AdMob.</li>
+      <li>We do not collect your contacts or browsing history. The only data we see ourselves are the crash
+      reports and usage statistics described in section 4, which are not linked to your name or account; section 3
+      explains what Google AdMob collects.</li>
+      <li>Apart from Google Firebase (section 4) and Google AdMob (section 3), the App uses no analytics,
+      tracking or advertising SDKs.</li>
       <li>We do not sell personal data.</li>
     </ul>
 
-    <h2>5. Permissions</h2>
+    <h2>6. Permissions</h2>
     <ul>
       <li><strong>Camera</strong> — to show the viewfinder and capture photos and videos.</li>
       <li><strong>Microphone</strong> (optional) — to record sound with videos.</li>
       <li><strong>Storage</strong> (Android 9 and below only) — to save your photos and videos to the gallery and
       show them in the in-app album. Newer Android versions do not need this permission.</li>
-      <li><strong>Internet and network state</strong> — used by Google Play Billing (Premium) and Google AdMob
-      (ads). Your photos, videos and recordings are never sent over the network.</li>
+      <li><strong>Internet and network state</strong> — used by Google Play Billing (Premium), Google AdMob (ads)
+      and Google Firebase (crash reports, statistics, settings). Your photos, videos and recordings are never sent over the network.</li>
       <li><strong>Google Play billing</strong> — to buy and restore the Premium subscription.</li>
       <li><strong>Advertising ID and Android ad services</strong> — added by Google AdMob to show and measure ads
       (see section 3).</li>
@@ -158,26 +179,27 @@
       background tasks; the App itself does not run in the background.</li>
     </ul>
 
-    <h2>6. Third-party services</h2>
-    <p>The App uses two third-party services, both from Google: <strong>Google Play</strong> for the Premium
-    subscription (section 2) and <strong>Google AdMob</strong> for ads (section 3). If you share a photo or video to another app (for example a messaging app), that app's own privacy policy
+    <h2>7. Third-party services</h2>
+    <p>The App uses three third-party services, all from Google: <strong>Google Play</strong> for the Premium
+    subscription (section 2), <strong>Google AdMob</strong> for ads (section 3) and <strong>Google Firebase</strong>
+    for crash reports, statistics and settings (section 4). If you share a photo or video to another app (for example a messaging app), that app's own privacy policy
     applies.</p>
 
-    <h2>7. Children</h2>
+    <h2>8. Children</h2>
     <p>The App is not directed at children under 13. We do not knowingly collect personal data from children.</p>
 
-    <h2>8. Data retention &amp; deletion</h2>
+    <h2>9. Data retention &amp; deletion</h2>
     <p>Photos and videos stay on your device until you delete them, in the in-app album or in your gallery.
     Uninstalling the App removes its settings and the local Premium flag; photos and videos already saved remain
     until you delete them yourself. Your subscription record is kept by Google Play and can be managed or cancelled
-    in your Google Play account. Data collected by Google AdMob is kept under Google's policies linked in
-    section 3.</p>
+    in your Google Play account. Data collected by Google AdMob and Google Firebase is kept under Google's
+    policies linked in sections 3 and 4.</p>
 
-    <h2>9. Changes</h2>
+    <h2>10. Changes</h2>
     <p>If a future version handles data differently, we will update this policy before that version is released,
     and the "Last updated" date above will change.</p>
 
-    <h2>10. Contact</h2>
+    <h2>11. Contact</h2>
     <p>Questions about this policy: <a href="mailto:tangxuanchien511@gmail.com">tangxuanchien511@gmail.com</a></p>
   </section>
 
@@ -191,8 +213,9 @@
       <strong>Tóm tắt:</strong> ảnh và video được chụp, quay, xử lý và lưu
       <strong>chỉ trên thiết bị của bạn</strong>. Chúng tôi không có máy chủ, không thu thập dữ liệu cá nhân, và
       không ảnh hay video nào rời khỏi điện thoại trừ khi chính bạn chọn chia sẻ. Ứng dụng hiển thị quảng cáo của
-      <strong>Google AdMob</strong> (trừ khi bạn dùng Premium) và kết nối tới <strong>Google Play</strong> cho gói
-      Premium (không bắt buộc); đó là các kết nối mạng duy nhất của Ứng dụng.
+      <strong>Google AdMob</strong> (trừ khi bạn dùng Premium), kết nối tới <strong>Google Play</strong> cho gói
+      Premium (không bắt buộc), và dùng <strong>Google Firebase</strong> cho báo cáo lỗi, thống kê sử dụng ẩn danh và
+      cài đặt từ xa; đó là các kết nối mạng duy nhất của Ứng dụng.
     </div>
 
     <h2>1. Thông tin Ứng dụng xử lý</h2>
@@ -254,24 +277,43 @@
       </ul>
     </div>
 
-    <h2>4. Những điều chúng tôi KHÔNG làm</h2>
+    <h2>4. Báo cáo lỗi, thống kê sử dụng và cài đặt (Google Firebase)</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Firebase Crashlytics.</strong> Khi Ứng dụng bị lỗi hoặc treo, Ứng dụng gửi một báo cáo lỗi gồm
+        stack trace, dòng máy, phiên bản Android, phiên bản ứng dụng và mã cài đặt Firebase. Chúng tôi chỉ dùng để tìm
+        và sửa lỗi. Báo cáo lỗi được lưu 90 ngày.</li>
+        <li><strong>Google Analytics cho Firebase.</strong> Ứng dụng gửi các sự kiện sử dụng như màn hình nào được mở,
+        máy ảnh nào được chọn, và việc đã chụp ảnh hay quay video (kèm tên máy ảnh và độ dài video). Ứng dụng không bao
+        giờ gửi ảnh, video, bản ghi âm hay tên file của bạn. Firebase thêm mã phiên bản ứng dụng, thông tin thiết bị và
+        Android, và vị trí gần đúng suy ra từ địa chỉ IP. Chúng tôi dùng các thống kê này để biết tính năng nào được
+        dùng nhiều. Dữ liệu sự kiện được lưu tối đa 14 tháng.</li>
+        <li><strong>Firebase Remote Config.</strong> Ứng dụng tải các cài đặt từ Firebase, ví dụ quảng cáo có bật hay
+        không và dùng đơn vị quảng cáo nào. Việc này dùng mã cài đặt Firebase.</li>
+        <li>Tìm hiểu thêm: <a href="https://firebase.google.com/support/privacy" rel="noopener">Quyền riêng tư và bảo
+        mật trong Firebase</a>.</li>
+      </ul>
+    </div>
+
+    <h2>5. Những điều chúng tôi KHÔNG làm</h2>
     <ul>
       <li>Không yêu cầu tài khoản, không hỏi tên, email hay số điện thoại.</li>
       <li>Không tải lên, lưu trữ hay xem ảnh, video hay bản ghi âm của bạn trên bất kỳ máy chủ nào.</li>
-      <li>Không thu thập danh bạ hay lịch sử duyệt web, và bản thân chúng tôi không nhận dữ liệu cá nhân nào (xem mục
-      3 về dữ liệu Google AdMob thu thập).</li>
-      <li>Không dùng SDK phân tích hay theo dõi; SDK quảng cáo duy nhất là Google AdMob.</li>
+      <li>Không thu thập danh bạ hay lịch sử duyệt web. Dữ liệu duy nhất chúng tôi xem được là báo cáo lỗi và thống
+      kê sử dụng ở mục 4, không gắn với tên hay tài khoản của bạn; mục 3 nói rõ dữ liệu Google AdMob thu thập.</li>
+      <li>Ngoài Google Firebase (mục 4) và Google AdMob (mục 3), Ứng dụng không dùng SDK phân tích, theo dõi hay
+      quảng cáo nào khác.</li>
       <li>Không bán dữ liệu cá nhân.</li>
     </ul>
 
-    <h2>5. Quyền truy cập</h2>
+    <h2>6. Quyền truy cập</h2>
     <ul>
       <li><strong>Camera</strong> — để hiển thị khung ngắm, chụp ảnh và quay video.</li>
       <li><strong>Micro</strong> (không bắt buộc) — để ghi âm thanh kèm video.</li>
       <li><strong>Bộ nhớ</strong> (chỉ Android 9 trở xuống) — để lưu ảnh, video vào thư viện và hiển thị chúng trong
       album của Ứng dụng. Android mới hơn không cần quyền này.</li>
-      <li><strong>Internet và trạng thái mạng</strong> — dùng cho Google Play Billing (Premium) và Google AdMob (quảng
-      cáo). Ảnh, video và bản ghi âm của bạn không bao giờ được gửi qua mạng.</li>
+      <li><strong>Internet và trạng thái mạng</strong> — dùng cho Google Play Billing (Premium), Google AdMob (quảng
+      cáo) và Google Firebase (báo cáo lỗi, thống kê, cài đặt). Ảnh, video và bản ghi âm của bạn không bao giờ được gửi qua mạng.</li>
       <li><strong>Thanh toán Google Play</strong> — để mua và khôi phục gói Premium.</li>
       <li><strong>Mã quảng cáo và dịch vụ quảng cáo của Android</strong> — do Google AdMob thêm vào để hiển thị và đo
       lường quảng cáo (xem mục 3).</li>
@@ -279,25 +321,26 @@
       ngắn; bản thân Ứng dụng không chạy nền.</li>
     </ul>
 
-    <h2>6. Dịch vụ bên thứ ba</h2>
-    <p>Ứng dụng dùng hai dịch vụ bên thứ ba, đều của Google: <strong>Google Play</strong> cho gói Premium (mục 2) và
-    <strong>Google AdMob</strong> cho quảng cáo (mục 3). Nếu bạn chia sẻ ảnh
+    <h2>7. Dịch vụ bên thứ ba</h2>
+    <p>Ứng dụng dùng ba dịch vụ bên thứ ba, đều của Google: <strong>Google Play</strong> cho gói Premium (mục 2),
+    <strong>Google AdMob</strong> cho quảng cáo (mục 3) và <strong>Google Firebase</strong> cho báo cáo lỗi, thống kê
+    và cài đặt (mục 4). Nếu bạn chia sẻ ảnh
     hoặc video sang ứng dụng khác (ví dụ ứng dụng nhắn tin), chính sách của ứng dụng đó sẽ được áp dụng.</p>
 
-    <h2>7. Trẻ em</h2>
+    <h2>8. Trẻ em</h2>
     <p>Ứng dụng không hướng tới trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập dữ liệu cá nhân của trẻ em.</p>
 
-    <h2>8. Lưu giữ &amp; xoá dữ liệu</h2>
+    <h2>9. Lưu giữ &amp; xoá dữ liệu</h2>
     <p>Ảnh và video nằm trên thiết bị cho tới khi bạn xoá, trong album của Ứng dụng hoặc trong thư viện ảnh. Gỡ cài
     đặt Ứng dụng sẽ xoá phần cài đặt và cờ Premium cục bộ; ảnh và video đã lưu vẫn còn cho tới khi bạn tự xoá.
     Thông tin gói đăng ký do Google Play lưu giữ, bạn có thể quản lý hoặc huỷ trong tài khoản Google Play. Dữ liệu
-    Google AdMob thu thập được lưu giữ theo các chính sách của Google ở mục 3.</p>
+    Google AdMob và Google Firebase thu thập được lưu giữ theo các chính sách của Google ở mục 3 và 4.</p>
 
-    <h2>9. Thay đổi</h2>
+    <h2>10. Thay đổi</h2>
     <p>Nếu phiên bản sau xử lý dữ liệu khác đi, chúng tôi sẽ cập nhật chính sách này trước khi phát hành, và ngày
     "Cập nhật lần cuối" ở trên sẽ thay đổi.</p>
 
-    <h2>10. Liên hệ</h2>
+    <h2>11. Liên hệ</h2>
     <p>Câu hỏi về chính sách: <a href="mailto:tangxuanchien511@gmail.com">tangxuanchien511@gmail.com</a></p>
   </section>
 
